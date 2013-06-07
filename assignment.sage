@@ -34,39 +34,24 @@ distances(5,6)
 def dimension_check(list):
 
     n = len(list)
-
     x = 0
-
     for i in range (0,n):
-
         if (len(list[i-1]) == len(list[i])):
-
             x=x+0
-
         else:
-
             x= x+1
-
     else:
-
         if (x==0) :
-
             return True
-
         else:
-
             return False
 
  
 
  
 
- 
-
- 
 
 dimension_check([[1,2],[3,4],[5,6,7]])
-
 dimension_check([[1,2],[3,4]])
 
 False
