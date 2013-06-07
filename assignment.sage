@@ -3,30 +3,22 @@ hon-s-assignment
 
 
 
-def distances(a,b):
+answer = []
+def distances(list):
+    n = len(list)
+    for i in range (0,n-1):
+        a = list[i-1];
+        b = list[n-1];
+        x = ((a[0]-b[0])^2+(a[1]-b[1])^2)^0.5
+        answer.append(x)
+print answer
 
-    print  (((7-a)^2+(8-b)^2)^0.5)
 
- 
 
-print "[1,2] & [7,8] =  "
 
-distances(1,2)
+distances([[1,2],[3,4],[5,6],[7,8]])
 
-print "[3,4] & [7,8] =  "
 
-distances(3,4)
-
-print "[5,6] & [7,8] =  "
-
-distances(5,6)
-
-[1,2] & [7,8] =  
-8.48528137423857
-[3,4] & [7,8] =  
-5.65685424949238
-[5,6] & [7,8] =  
-2.82842712474619
 
 
  
