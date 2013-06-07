@@ -2,14 +2,16 @@ hon-s-assignment
 ================
 
 
-
 answer = []
 def distances(list):
     n = len(list)
     for i in range (0,n-1):
-        a = list[i-1];
-        b = list[n-1];
-        x = ((a[0]-b[0])^2+(a[1]-b[1])^2)^0.5
+        x = 0
+        for j in range(0,len(list[0])):
+            a = list[i-1];
+            b = list[n-1];
+            x = x+ (a[j-1]-b[j-1])^2
+        x = x^0.5    
         answer.append(x)
 print answer
 
@@ -17,7 +19,6 @@ print answer
 
 
 distances([[1,2],[3,4],[5,6],[7,8]])
-
 
 
 
